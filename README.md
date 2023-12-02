@@ -17,3 +17,8 @@ ASP.NET 4.0 Web Forms ile yaptığım haber sitesi çalışmamdır. Yazar ve Adm
 ![h14](https://github.com/huseyinaydin99/my-aspdotnet-web-forms-news-portal-workshop/assets/16438043/01abdf7c-608b-4d03-aeee-0357292e2ba3)
 ![h15](https://github.com/huseyinaydin99/my-aspdotnet-web-forms-news-portal-workshop/assets/16438043/6faf9729-709f-44ea-92ab-303c36442795)
 ![h16](https://github.com/huseyinaydin99/my-aspdotnet-web-forms-news-portal-workshop/assets/16438043/1ba0fad0-fae2-4f58-a9b4-56b206b39e75)
+
+Video:
+https://github.com/huseyinaydin99/my-aspdotnet-web-forms-news-portal-workshop/assets/16438043/1b7ace07-5b38-4c8b-8197-553e257691ed
+
+Kaliteli video:
