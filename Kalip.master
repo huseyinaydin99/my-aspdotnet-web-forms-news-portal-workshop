@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Kalip.master.cs" Inherits="Kalip" %><%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Haber Sitesi - Haberin Merkezi</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+<table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" bgcolor="#E8E7E3"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="53" valign="bottom" style="background-image:url(Images/bannerbg.jpg);"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="29%"><a href="Default.aspx"><img border="0" src="Images/logo.jpg" width="241" height="46" /></a></td>
+            <td width="45%" class="slogan">En doğru ve güncel haberleri anında haberin merkezinden okuyun</td>
+            <td width="26%" align="right">
+                <asp:Panel DefaultButton="imgbtnAra" ID="pnlAra" runat="server">
+                    <asp:TextBox ID="txtStr" style="background-image:url(Images/text.jpg);" 
+                    runat="server" BorderWidth="0px" Font-Size="11pt" ForeColor="White" 
+                    Width="155px"></asp:TextBox>
+                    &nbsp;<asp:ImageButton ID="imgbtnAra" runat="server" 
+    ImageUrl="~/Images/arabtn.jpg" ImageAlign="AbsMiddle" 
+    onclick="imgbtnAra_Click" />
+                </asp:Panel>
+              </td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="35" bgcolor="#FFFFFF">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr class="kategori">
+                <asp:Repeater ID="rpKategoriler" runat="server">
+                <ItemTemplate>
+                    <td align="center"><a href="kategori_<%#Ayarlar.UrlSeo(Eval("KategoriAdi").ToString()) %>_<%#Eval("KategoriId") %>.html" class="kategori"><%#Eval("KategoriAdi").ToString().ToUpper() %></a></td>
+                </ItemTemplate>
+                </asp:Repeater>
+            </tr>
+          </table></td>
+        </tr>
+    </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="21" background="Images/katalt.jpg"></td>
+        </tr>
+    </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      <table width="915" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="42" align="center" background="Images/altbg.jpg" class="alt">github.com/huseyinaydin99&nbsp; 
+              | <a href="YazarGirisi.aspx" class="alt">Yazar Girişi</a></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+    </form>
+</body>
+</html>

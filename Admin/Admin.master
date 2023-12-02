@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   <link rel="stylesheet" type="text/css" href="Style.css" />
+   <link rel="stylesheet" type="text/css" href="AdminStyle.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </cc1:ToolkitScriptManager>
+        <table background="Images/ustbg.jpg" border="0" cellpadding="0" cellspacing="0" 
+            height="128" width="100%">
+            <tr>
+                <td valign="top">
+                    <img height="61" src="Images/YoneticiPaneli.jpg" width="230" /></td>
+                <td valign="top" align="center">
+                    <br />
+                </td>
+                <td align="right" valign="top">&nbsp;
+                    </td>
+            </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" height="458" width="100%">
+            <tr>
+                <td valign="top" width="16%">
+                    <table border="0" cellpadding="0" cellspacing="0" width="188">
+                        <tr>
+                            <td>
+                                <img height="20" src="Images/tblsolUst.jpg" width="25" /></td>
+                            <td background="Images/tblustbg.jpg" width="100%">&nbsp;
+                                </td>
+                            <td>
+                                <img height="20" src="Images/tblsagust.jpg" width="25" /></td>
+                        </tr>
+                        <tr>
+                            <td background="Images/tblsolbg.jpg">&nbsp;
+                          </td>
+                            <td bgcolor="#F7F7F7">
+                                <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                    <tr>
+                                        <td class="baslik2">
+                                            İşlem Menüsü
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr color="#CCCCCC" size="1px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sollink">
+                                            <asp:Label ID="lblAdmin" runat="server"></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sollink">
+                                            <asp:HyperLink ID="Link" runat="server" CssClass="sollink" 
+                                                NavigateUrl="Adminler.aspx">• Admin Yönetimi</asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sollink">
+                                            <asp:HyperLink ID="Link0" runat="server" CssClass="sollink" 
+                                                NavigateUrl="Kategoriler.aspx">• Kategori Yönetimi</asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sollink">
+                                            <asp:HyperLink ID="hplYorum" runat="server" CssClass="sollink">[hplYorum]</asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sollink">
+                                            <asp:HyperLink ID="Link1" runat="server" CssClass="sollink" 
+                                                NavigateUrl="YazarYonetimi.aspx">• Yazar Yönetimi</asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sollink">
+                                            <asp:HyperLink ID="Link2" runat="server" CssClass="sollink" 
+                                                NavigateUrl="FotoYonetimi.aspx">• Foto Galeri</asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sollink">
+                                            <asp:HyperLink ID="Link3" runat="server" CssClass="sollink" 
+                                                NavigateUrl="AnketYonetimi.aspx">• Anket Yönetimi</asp:HyperLink>
+                                        </td>
+                                    </tr>
+                                </table>
+                          </td>
+                            <td background="Images/tblsagbg.jpg">&nbsp;
+                          </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <img height="20" src="Images/tblsolAlt.jpg" width="25" /></td>
+                            <td align="right" background="Images/tblaltbg.jpg">&nbsp;
+                                </td>
+                            <td>
+                                <img height="20" src="Images/tblsagalt.jpg" width="25" /></td>
+                        </tr>
+                    </table>
+                </td>
+                <td valign="top" width="84%">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td>
+                                <img height="20" src="Images/tblsolUst.jpg" width="25" /></td>
+                            <td background="Images/tblustbg.jpg" width="100%">&nbsp;
+                                </td>
+                            <td>
+                                <img height="20" src="Images/tblsagust.jpg" width="25" /></td>
+                        </tr>
+                        <tr>
+                            <td background="Images/tblsolbg.jpg">&nbsp;
+                                </td>
+                            <td bgcolor="#F7F7F7">
+                                <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                    <tr>
+                                        <td class="baslik2">
+                                            
+                                            <asp:Label ID="lblSayfaBaslik" runat="server"></asp:Label>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr color="#CCCCCC" size="1px" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td background="Images/tblsagbg.jpg">&nbsp;
+                                </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <img height="20" src="Images/tblsolAlt.jpg" width="25" /></td>
+                            <td align="right" background="Images/tblaltbg.jpg">&nbsp;
+                                </td>
+                            <td>
+                                <img height="20" src="Images/tblsagalt.jpg" width="25" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table border="0" cellpadding="2" cellspacing="2" width="100%">
+            <tr>
+                <td align="center" class="soluk">
+                    © 2024 Harcore Psycho Software Junior Developer<br />
+                    Hüseyin AYDIN</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

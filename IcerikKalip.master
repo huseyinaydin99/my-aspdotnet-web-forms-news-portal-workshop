@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Kalip.master" AutoEventWireup="true" CodeFile="IcerikKalip.master.cs" Inherits="IcerikKalip" %>
+<%@ Register src="Anket.ascx" tagname="Anket" tagprefix="uc2" %>
+<%@ Register src="SolFoto.ascx" tagname="SolFoto" tagprefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="22%" valign="top">
+                <uc1:SolFoto ID="SolFoto1" runat="server" />
+                <uc2:Anket ID="Anket1" runat="server" />
+            </td>
+            <td width="78%" valign="top">
+             <table width="747" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <img src="Images/panelust.jpg" width="747" height="15" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td background="Images/panelorta.jpg">
+                                    <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td class="normal">
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Images/panelalt.jpg" width="747" height="19" />
+                                </td>
+                            </tr>
+                        </table>
+            </td>
+        </tr>
+    </table>
+</asp:Content>

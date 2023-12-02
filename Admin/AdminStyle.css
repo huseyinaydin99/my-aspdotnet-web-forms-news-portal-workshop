@@ -1,0 +1,58 @@
+﻿body 
+{
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+.normal
+{
+	font-size: 12px;
+	color: black;
+	font-family: 'Trebuchet MS';
+	text-decoration: none;
+}
+.beyazbaslik
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #ffffff;
+	font-family: 'Trebuchet MS';
+	text-decoration: none;
+}
+.ekle
+{
+	font-weight: bold;
+	font-size: 13px;
+	color: #ff0033;
+	font-family: 'Trebuchet MS';
+	text-decoration: none;
+}
+.menubaslik
+{
+	font-size: 14px;
+	color: red;
+	font-family: 'Trebuchet MS';
+	text-decoration: none;
+}
+.menualtbaslik
+{
+	font-size: 14px;
+	color: #000000;
+	font-family: 'Trebuchet MS';
+	text-decoration: none;
+}
+.menualtaltbaslik
+{
+	font-size: 13px;
+	color: dimgray;
+	font-family: 'Trebuchet MS';
+	text-decoration: none;
+}
+.menusonbaslik
+{
+	font-size: 12px;
+	color: #699032;
+	font-family: 'Trebuchet MS';
+	text-decoration: none;
+}

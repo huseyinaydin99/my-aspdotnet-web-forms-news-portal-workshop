@@ -1,0 +1,94 @@
+﻿body {
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	background-color:#999;
+}
+.kategori
+{
+    font-family: 'Arial Narrow';
+    font-size: 13px;
+    color: #6C6C6B;
+    text-decoration: none;
+}
+.bolumbaslik
+{
+    font-family: Arial;
+    font-size: 13px;
+    color: #B42E08;
+    text-decoration: none;
+    font-weight: bold;
+}
+.mansetbaslik
+{
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    color: #343332;
+    font-weight: bold;
+    text-decoration: none;
+}
+.normal
+{
+    font-family: Arial;
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
+}
+.mansethaberler
+{
+    font-family: Arial;
+    font-size: 13px;
+    color: #033978;
+    text-decoration: none;
+}
+.tarih
+{
+    font-family: 'Arial Narrow';
+    color: #666666;
+    font-size: 10px;
+    text-decoration: none;
+}
+.yazaradi
+{
+    font-family: Arial;
+    font-size: 15px;
+    color: #B42E08;
+    text-decoration: none;
+}
+.yazaryazi
+{
+    font-family: Verdana;
+    font-size: 10px;
+    color: #333333;
+    text-decoration: none;
+}
+.katbaslik
+{
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+    color: #343332;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.baslik
+{
+    font-family: Arial;
+    font-size: 12px;
+    color: #B42E08;
+    text-decoration: none;
+}
+.slogan
+{
+    font-family: Arial;
+    font-size: 12px;
+    color: #E4A687;
+    text-decoration: none;
+}
+.alt
+{
+    font-family: 'Trebuchet MS';
+    font-size: 11px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
